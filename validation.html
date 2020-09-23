@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var username=document.getElementById('username').value;
+        var arraylist=['giri','raj'];
+        
+        
+        function validate(){
+            var username=document.getElementById('username').value;
+            var password=document.getElementById('password').value;
+            var email=document.getElementById('email').value;
+            var phone=document.getElementById('pno').value;
+            var arraylist=['giri','raj'];
+            if(username="" || username.length<3)
+            {
+                alert("Please enter the corret name");
+            }
+            else if(password=="" || (!password.match(/[A-Za-z].{8,}$/) ))
+            {
+                alert("Please enter correct password")
+
+            }
+            
+            else if(email==""  || email.match(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]/))
+            {
+                alert("Please enter valid email");
+            }
+            else if(phone=="" || (!phone.match(/\d{10}/)))
+            {
+                alert("enter valid phone no");
+            }
+            else{
+                check();
+            }
+        function check()
+        {
+            for(i in arraylist)
+            {
+                if(arraylist[i]==username)
+                {
+                    alert("user already exists");
+                    break;
+
+                 }
+                 else
+                 {
+                    alert("you are successfully registered");
+                }   
+            }
+        }   
+
+
+        }
+        
+       
+
+    </script>
+</head>
+<body>
+    <form >
+        Name:<input type="text" name="text" id="username" placeholder="Enter your name"/><br/>
+        Password:<input type="password" name="passwd" id="password" placeholder="Enter your password"/><br/>
+        Phone no:<input type="number" name="pno" id="pno" placeholder="Enter your phone no"/><br/>
+        Email:<input type="email" name="email" id="email" placeholder="Enter email id"/><br/>
+           
+            <input type="submit" name="submit" id="submit" onclick="validate()"/>
+    </form>
+    
+    
+</body>
+</html>
