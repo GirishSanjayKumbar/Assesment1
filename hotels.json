@@ -1,0 +1,38 @@
+[
+    {
+        "name": "taj",
+        "city": "Mumbai",
+        "type": "Veg",
+        "cuisine": ["Indian", "Italian"]
+    },
+    {
+        "name": "Surabhi Comforts",
+        "city": "Mysore",
+        "type": "Veg",
+        "cuisine": ["Indian"]
+    },
+    {
+        "name": "Neeland",
+        "city": "Banglore",
+        "type": "Non-Veg",
+        "cuisine": ["indian", "chinese", "arabian"]
+    },
+    {
+        "name": "Prince Paradise",
+        "city": "Hyderabad",
+        "type": "Non-Veg",
+        "cuisine": ["indian", "chinese"]
+    },
+    {
+        "name": "Radhas",
+        "city": "Banglore",
+        "type": "Non-Veg",
+        "cuisine": ["american", "chinese"]
+    },
+    {
+        "name": "Akshaya",
+        "city": "Mysore",
+        "type": "Veg",
+        "cuisine": ["indian"]
+    }
+]
